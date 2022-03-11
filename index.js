@@ -1,10 +1,10 @@
 require('dotenv').config()
 const express = require('express')
-const res = require('express/lib/response')
+// const res = require('express/lib/response')
 const app = express()
 
 
-// route that definces the view engine (JSX)
+// route that defines the view engine (JSX)
 app.set('view engine','jsx')
 app.engine('jsx', require('express-react-views').createEngine())
 
