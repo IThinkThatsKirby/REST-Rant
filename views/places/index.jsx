@@ -6,15 +6,24 @@ function index(data) {
     return (
       <div className="col-sm-6">
         <h2>{place.name}</h2>
-        <img src={place.pic} alt={place.name}></img>
+        <p clasName="text-center">
+          {place.cuisines}
+        </p>
+        <div >
+          <img className="img-fluid" src={place.pic} alt={place.name} />
+          Photo by <a href={place.creditLoc}>{place.creditName}</a>
+        </div>
+        <p clasName="text-center">
+          Located in {place.city}, {place.state}
+        </p>
       </div>
-    );
-  });
+    )
+  })
   return (
     <Def>
       <main>
         <h1>Places to Rant or Rave About</h1>
-        <div classname="container">
+        <div>
           <div className="row">
             {placesFormatted}
           </div>

@@ -10,7 +10,9 @@ function Def (html) {
                 <link rel="stylesheet"  href="/css/style.css" />
             </head>
             <body>
-                {html.children}
+                <div style={{height: 92 +'vh'}}>
+                    {html.children}
+                </div>
             </body>
         </html>
     )
