@@ -1,4 +1,20 @@
 h1 {
-    text-align: center;
-    color: cornflowerblue;
-    }
+  text-align: center;
+  color: cornflowerblue;
+}
+.btn-primary {
+  color: red;
+  background-color: red;
+}
+#homeBtn {
+  display: block;
+  text-align: center;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+* {
+  outline: 1px solid red;
+}
