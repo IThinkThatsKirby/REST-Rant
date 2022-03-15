@@ -17,7 +17,7 @@ function index(data) {
           <img className="img-fluid" src={place.pic} alt={place.name} />
           Photo by <a href={place.creditLoc}>{place.creditName}</a>
         </div>
-        <p clasName="text-center">
+        <p className="text-center">
           Located in {place.city}, {place.state}
         </p>
       </div>
