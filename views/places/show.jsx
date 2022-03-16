@@ -40,5 +40,3 @@ function show(data) {
 }
 
 module.exports = show;
-
-module.exports = show;
