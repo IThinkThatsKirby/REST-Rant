@@ -13,9 +13,9 @@ function index(data) {
         <p className="text-center">
           {place.cuisines}
         </p>
-        <div>
+        <div className="container">
           <img className="img-fluid" src={place.pic} alt={place.name} />
-          Photo by <a href={place.creditLoc}>{place.creditName}</a>
+          <div>Photo by <a href={place.creditLoc}>{place.creditName}</a></div>
         </div>
         <p className="text-center">
           Located in {place.city}, {place.state}
