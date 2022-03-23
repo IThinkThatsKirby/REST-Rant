@@ -6,7 +6,7 @@ const methodOverride = require("method-override");
 const app = express();
 
 // Express Settings
-// app.set('views', __dirname + '/views')
+app.set('views', __dirname + '/views')
 app.use(express.urlencoded({ extended: true }));
 app.use(methodOverride("_method"));
 app.set("view engine", "jsx");
@@ -15,7 +15,7 @@ app.use(express.static("public"));
 // controllers and routes
 app.use("/places", require("./controllers/places"));
 
-// it already knows to look for the folder called views when using render
+// it already knows to look  the folder called views when using render
 app.get("/", (req, res) => {
 	res.render("home");
 });

@@ -1,4 +1,10 @@
 const React = require("react");
+//MUI imports
+import Box from "@mui/material/Box";
+import Button from "@mui/material/Button";
+import Stack from "@mui/material/Stack";
+import Grid from "@mui/material/Grid";
+import { spacing } from "@mui/system";
 
 function Def(html) {
 	return (
@@ -14,45 +20,36 @@ function Def(html) {
 					href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
 					rel="stylesheet"
 					integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
-					crossOrigin="anonymous"
-				></link>
+					crossOrigin="anonymous"></link>
 				<link rel="stylesheet" href="/css/style.css" />
+				<link
+					rel="stylesheet"
+					href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+				/>
+				<link
+					rel="stylesheet"
+					href="https://fonts.googleapis.com/icon?family=Material+Icons"
+				/>
 			</head>
 			<body>
 				<div>
 					{/* mess with this latter */}
-					<div className="container-fluid">
-						<div className="row">
-							<nav className="dropdown">
-								<button
-									className="btn btn-secondary dropdown-toggle"
-									type="button"
-									id="dropdownMenuButton2"
-									data-bs-toggle="dropdown"
-									aria-expanded="false"
-								>
-									Navigate our site
-								</button>
-								<ul className="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
-									<li>
-										<a className="dropdown-item" href="/">
-											Home
-										</a>
-									</li>
-									<li>
-										<a className="dropdown-item" href="/places">
-											Places
-										</a>
-									</li>
-									<li>
-										<a className="dropdown-item" href="/places/new">
-											Add Place
-										</a>
-									</li>
-								</ul>
-							</nav>
-						</div>
-					</div>
+					<Box
+						sx={{
+							justifyContent: "center",
+							display: "flex",
+						}}
+					>
+						<Button variant="contained" href="/">
+							Home
+						</Button>
+						<Button variant="contained" href="/places">
+							Places
+						</Button>
+						<Button variant="contained" href="/places/new">
+							Add Place
+						</Button>
+					</Box>
 					<div>{html.children}</div>
 				</div>
 			</body>
