@@ -1,26 +1,32 @@
 {
-  "name": "rest-rant",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "@emotion/react": "^11.8.2",
-    "@emotion/styled": "^11.8.1",
-    "@mui/material": "^5.5.1",
-    "dotenv": "^16.0.0",
-    "express": "^4.17.3",
-    "express-react-views": "^0.11.0",
-    "method-override": "^3.0.0",
-    "mongoose": "^6.2.7",
-    "mui": "^0.0.1",
-    "nodemon": "^2.0.15",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2"
-  }
+	"name": "rest-rant",
+	"version": "1.0.0",
+	"description": "REST-Rant is an app where users can review restaurants.",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"@emotion/react": "^11.8.2",
+		"@emotion/styled": "^11.8.1",
+		"@mui/material": "^5.5.2",
+		"dotenv": "^16.0.0",
+		"express": "^4.17.3",
+		"express-react-views": "^0.11.0",
+		"method-override": "^3.0.0",
+		"mongoose": "^6.2.7",
+		"react": "^17.0.2",
+		"react-dom": "^17.0.2"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/IThinkThatsKirby/REST-Rant.git"
+	},
+	"bugs": {
+		"url": "https://github.com/IThinkThatsKirby/REST-Rant/issues"
+	},
+	"homepage": "https://github.com/IThinkThatsKirby/REST-Rant#readme"
 }
