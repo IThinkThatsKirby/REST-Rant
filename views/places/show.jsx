@@ -2,6 +2,7 @@ const React = require("react");
 const Def = require("../default");
 
 function show(data) {
+	console.log(data);
 	return (
 		<Def>
 			<main>
@@ -26,7 +27,8 @@ function show(data) {
 							</div>
 							<div>
 								<h2>discriptions</h2>
-								<h3>location state city couisienes</h3>
+								<h3>{data.place.showEstablished()}</h3>
+								<h4>Serving {data.place.cuisines}</h4>
 							</div>
 						</div>
 					</div>

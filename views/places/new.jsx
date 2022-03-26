@@ -1,10 +1,23 @@
 const React = require("react");
 const Def = require("../default");
+import Alert from "@mui/material/Alert";
+import Stack from "@mui/material/Stack";
 
-function new_form() {
+function new_form(data) {
+	let message = "";
+	if (data.message) {
+		message = (
+			<Stack>
+				<Alert severity="error">
+					{data.message}
+				</Alert>
+			</Stack>
+		);
+	}
 	return (
 		<Def>
 			<main>
+				{message}
 				<h1>Add a New Place</h1>
 				<form method="POST" action="/places">
 					<div className="form-group">
@@ -34,7 +47,13 @@ function new_form() {
 					</div>
 					<div className="form-group">
 						<label htmlFor="founded">Founded Year</label>
-						<input className="form-control" id="founded" name="founded" />
+						<input
+							type="number"
+							className="form-control"
+							id="founded"
+							name="founded"
+							value={new Date().getFullYear()}
+						/>
 					</div>
 					<input className="btn btn-primary" type="submit" value="Add Place" />
 				</form>

@@ -18,17 +18,23 @@ router.post("/", (req, res) => {
 			res.redirect("/places");
 		})
 		.catch((err) => {
-			console.log("err", err);
-			res.render("error404");
+			if (err && err.name == "ValidationError") {
+				let message = "Validation Error: ";
+				for (var field in err.errors) {
+					message += `${field} was ${err.errors[field].value}. ${err.errors[field].message}\n`;
+				}
+				res.render("places/new", { message });
+			} else {
+				res.render("error404");
+			}
 		});
 });
-
 router.get("/new", (req, res) => {
 	res.render("places/new");
 });
 
 router.get("/:id", (req, res) => {
-	res.send("GET /places/:id stub");
+	res.render("places/show", { place });
 });
 
 router.put("/:id", (req, res) => {
