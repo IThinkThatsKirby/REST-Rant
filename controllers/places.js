@@ -34,11 +34,12 @@ router.get("/new", (req, res) => {
 });
 
 router.get("/:id", (req, res) => {
-	db.Place.findOne({ _id: req.params.id })
+	db.Place.findOne(req.param.id)
 		.then((place) => {
 			res.render("places/show", { place });
 		})
 		.catch((err) => {
+			console.log(req)
 			console.log("err", err);
 			res.render("error404");
 		});
