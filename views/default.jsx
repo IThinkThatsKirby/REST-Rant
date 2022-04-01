@@ -2,9 +2,6 @@ const React = require("react");
 //MUI imports
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
-import Stack from "@mui/material/Stack";
-import Grid from "@mui/material/Grid";
-import { spacing } from "@mui/system";
 
 function Def(html) {
 	return (
@@ -30,6 +27,7 @@ function Def(html) {
 					rel="stylesheet"
 					href="https://fonts.googleapis.com/icon?family=Material+Icons"
 				/>
+
 			</head>
 			<body>
 				<div>
