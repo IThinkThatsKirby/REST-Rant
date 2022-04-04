@@ -70,7 +70,7 @@ router.put("/:id", (req, res) => {
 });
 
 router.delete("/:id", (req, res) => {
-	db.Place.findAndDeleteById(req.params.id)
+	db.Place.findByIdAndDelete(req.params.id)
 	.then(()=>{
 		res.redirect('/places')
 	})
