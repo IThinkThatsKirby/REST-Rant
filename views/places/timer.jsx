@@ -10,6 +10,7 @@ const db = require("../../models");
 // 		console.log(avgV);
 // 	});
 // }
+
 // getAvg();
 
 // function Timer() {
