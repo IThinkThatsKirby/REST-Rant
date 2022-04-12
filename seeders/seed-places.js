@@ -1,6 +1,6 @@
 const db = require('../models')
 
-db.Place.create([{
+db.Place.insertMany([{
     name: 'H-Thai-ML',
     city: 'Seattle',
     state: 'WA',
